@@ -32,6 +32,13 @@ When compiling our analysis, we took deliberate steps to ensure the protection o
 #### Results and Future Considerations 
 #TODO Summarize results and say what we might do differently in the future. 
 
+
+| Methods of Analysis  | Success Measure 1 | Success Measure 2 |
+| ------------- | ------------- | ------------- |
+| Linear Regression  | TBD  | TBD  |
+| Random Forest  | TBD  | TBD  |
+| Neural Network  | TBD  | TBD  |
+
 #### References
 <br>#TODO References for the data source(s)</br>
 <ul>

@@ -104,11 +104,10 @@ Through our analysis, we found:
 
 ### **Performance Summary**
 
-| Model               | Accuracy  | Key Features       |
-| ------------------- | --------- | ------------------ |
-| Linear Regression   | TBD       | TBD                |
-| Random Forest       | TBD       | `Near_Holiday`, `Product_Category` |
-| Neural Network      | TBD       | TBD                |
+| Model             | MSE           | MAE            | R-squared | Key Features                     | Notes                                  |
+|-------------------|---------------|----------------|-----------|----------------------------------|----------------------------------------|
+| Random Forest     | 364.57        | 0.95          | 0.981     | `Near_Holiday`, `Product_Category`, `State` | High R-squared indicates strong fit; interpretable feature importance  |
+| Neural Network    | 33.67 (Loss)  | 2.04          | N/A       | `Near_Holiday`, `Product_Category`, `Discount Percentage` | Lower MAE but higher complexity; best model after tuning |
 
 ---
 

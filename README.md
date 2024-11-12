@@ -3,6 +3,17 @@
 
 ---
 
+## **Table of Contents**
+
+- [Overview](#overview)
+- [Data Sources](#data-sources)
+- [Code Structure and Usage](#code-structure-and-usage)
+- [Ethical Considerations](#ethical-considerations)
+- [Results and Future Considerations](#results-and-future-considerations)
+- [References](#references)
+
+---
+
 ## **Overview**
 Our team—Ellen, Natalie, and Drew—explored consumer spending behavior using a dataset from Kaggle. Our primary goal was to investigate the relationship between holidays and spending patterns to better understand how seasonal trends and promotional strategies impact consumer purchasing.
 
@@ -63,6 +74,7 @@ The main dataset used in this project is the **Kaggle Online Shopping Dataset**,
     ```
 3. **Run Notebooks: Open each .ipynb file in Jupyter Notebook, Jupyter Lab, or Google Colab to follow along with the analysis.
 
+---
 
 ## **Ethical Considerations**
 
@@ -75,7 +87,7 @@ The main dataset used in this project is the **Kaggle Online Shopping Dataset**,
 3. **Privacy**  
    All reports and visualizations focus on aggregated data, protecting individual customer privacy. Identifiable information was not included in any outputs.
 
-
+---
 
 ## **Results and Future Considerations**
 
@@ -98,6 +110,7 @@ Through our analysis, we found:
 | Random Forest       | TBD       | `Near_Holiday`, `Product_Category` |
 | Neural Network      | TBD       | TBD                |
 
+---
 
 ## **References**
 

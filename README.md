@@ -12,10 +12,15 @@ The primary dataset used for this project is the Kaggle Online Shopping Dataset,
 
 Raw Data Overview
 •	Customer ID, Transaction ID: Identifiers for transactions and customers.
+
 •	Gender, Location: Demographic details of customers.
+
 •	Transaction Date: Date and time of purchase.
+
 •	Product Category, Description: Product-related information.
+
 •	Quantity, Price, Delivery Charges: Transactional data.
+
 •	Coupon Status, Discount Percentage: Promotion-related data.
 
 Key Changes from Raw to Processed Data

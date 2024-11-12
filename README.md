@@ -8,6 +8,7 @@ Our team, Ellen, Natalie, and Drew sought out to explore the spending behavior o
 
 #### Data Sources
 <br>#TODO what data sources did we use? What did the raw data look like when we started and then when we brought it into analysis.</br>
+
 The primary dataset used for this project is the Kaggle Online Shopping Dataset, which contains records of customer transactions, including demographic information, product details, and transaction-specific data (e.g., price, quantity, and promotions).
 
 Raw Data Overview

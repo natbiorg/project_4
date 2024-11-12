@@ -25,9 +25,13 @@ Raw Data Overview
 
 Key Changes from Raw to Processed Data
 •	Consolidation: The raw dataset had multiple rows per transaction for the same customer, which were consolidated into one row per transaction in the processed dataset.
+
 •	New Features: Added Customer Tenure (how long the customer has been shopping) and Total Sales (Quantity * Average Price).
+
 •	Holiday Indicator: The Near_Holiday column was added to indicate whether the transaction occurred around a holiday (e.g., New Year's Day).
+
 •	State Information: State column added to track customer location.
+
 •	Missing Values: Handled through mean imputation or row removal for critical data.
 
 
@@ -37,14 +41,22 @@ Key Changes from Raw to Processed Data
 
 Project Structure:
 •	data: Contains the raw and processed datasets.
+
   o	raw_data.csv: Original transaction data.
+  
   o	cleaned_data.csv: Preprocessed dataset ready for analysis.
+  
 •	notebooks: Jupyter notebooks for data exploration and modeling.
+
   o	EDA.ipynb: Exploratory Data Analysis for understanding customer behavior.
+  
   o	modeling.ipynb: Building and evaluating predictive models.
+  
 •	script: Python scripts for data preprocessing, feature engineering, and model training.
   o	data_preprocessing.py: Cleans and preprocesses the raw data.
+  
   o	feature_engineering.py: Creates additional features for analysis and modeling.
+  
   o	model.py: Trains and evaluates machine learning models.
 
 

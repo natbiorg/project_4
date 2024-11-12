@@ -104,10 +104,19 @@ Through our analysis, we found:
 
 ### **Performance Summary**
 
-| Model             | MSE           | MAE            | R-squared | Key Features                     | Notes                                  |
-|-------------------|---------------|----------------|-----------|----------------------------------|----------------------------------------|
-| Random Forest     | 364.57        | 0.95          | 0.981     | `Near_Holiday`, `Product_Category`, `State` | High R-squared indicates strong fit; interpretable feature importance  |
-| Neural Network    | 33.67 (Loss)  | 2.04          | N/A       | `Near_Holiday`, `Product_Category`, `Discount Percentage` | Lower MAE but higher complexity; best model after tuning |
+| Model             | MSE (or Loss) | MAE  | R-squared | Key Features                     | Notes                                  |
+|-------------------|---------------|------|-----------|----------------------------------|----------------------------------------|
+| Random Forest     | 364.57        | 0.95 | 0.981     | `Near_Holiday`, `Product_Category`, `State` | High R-squared indicates strong fit; interpretable feature importance |
+| Neural Network    | 32.17         | 1.6  | N/A       | `Near_Holiday`, `Product_Category`, `Discount Percentage` | Best configuration used 3 layers with 6/6 nodes, relu/linear activations; optimized with 50 epochs |
+| Neural Network (Alternative Config) | 22.2   | 2.08 | N/A       | `Near_Holiday`, `Product_Category`, `Discount Percentage` | Performed well with 4 layers and 50 epochs; possible overfitting at 100 epochs |
+
+### **Summary of Neural Network Configurations:**
+- **Best Neural Network (Loss: 32.17, MAE: 1.6)**: Achieved with 3 layers (6 nodes in each of the first two layers), 50 epochs, and `relu/linear` activation functions.
+- **Alternative Configurations**: 
+  - **4-layer Model with Loss: 22.2, MAE: 2.08** - Lower loss but slightly higher MAE, indicating possible overfitting as complexity increased.
+  - **4-layer Model with 100 epochs** - Higher loss (63.91) and MAE (5.16), likely due to overfitting.
+
+This summary provides an overview of the neural network configurations tested, highlighting the most effective setup and potential signs of overfitting with increased complexity.
 
 ---
 

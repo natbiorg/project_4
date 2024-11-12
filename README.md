@@ -123,11 +123,9 @@ This summary provides an overview of the neural network configurations tested, h
 ## **References**
 
 - **Data Source**: [Kaggle Online Shopping Dataset](https://www.kaggle.com/)
-#TODO References for any code used that is not your own
-<ul>
-  <li>ChatGPT</li> 
-  <li>AskBCS</li> 
-  <li>Gulseevi Rees</li> 
-</ul>
-<br>___</br>
+- **References for any code used that is not your own:**
+  - ChatGPT
+  - AskBCS
+  - Gulseevi Rees
 
+___

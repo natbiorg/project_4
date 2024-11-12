@@ -65,7 +65,7 @@ The main dataset used in this project is the **Kaggle Online Shopping Dataset**,
 ### **Usage Instructions**
 1. **Clone the Repository**:
    ```bash
-   git clone [repository URL]
+   git clone (https://github.com/natbiorg/project_4)
     ```
 2. **Install Dependencies**:
    ```bash

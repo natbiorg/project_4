@@ -41,25 +41,28 @@ Key Changes from Raw to Processed Data
 
 Project Structure:
 
-•	data: Contains the raw and processed datasets.
+•	analysis_and_resources: Contains all the project-related resources and outputs.
 
-    o	raw_data.csv: Original transaction data.
-  
-    o	cleaned_data.csv: Preprocessed dataset ready for analysis.
-  
-•	notebooks: Jupyter notebooks for data exploration and modeling.
+    o	cleaned.csv: The cleaned and preprocessed version of the original dataset, ready for analysis.
 
-    o	EDA.ipynb: Exploratory Data Analysis for understanding customer behavior.
-  
-    o	modeling.ipynb: Building and evaluating predictive models.
-  
-•	script: Python scripts for data preprocessing, feature engineering, and model training.
+    o	shopping.csv: Raw dataset containing transaction records of customers.
 
-    o	data_preprocessing.py: Cleans and preprocesses the raw data.
-  
-    o	feature_engineering.py: Creates additional features for analysis and modeling.
-  
-    o	model.py: Trains and evaluates machine learning models.
+    o	project_4_proposal.doc: The project proposal document outlining the objectives, methodology, and expected outcomes of the analysis.
+
+•	notebooks: Jupyter notebooks used for different stages of the project.
+
+    o	data_cleaning_preprocessing.ipynb: Notebook for cleaning and preprocessing the raw data (handling missing values, transforming date formats, etc.).
+
+    o	initial_analysis.ipynb: Notebook for performing exploratory data analysis (EDA) to gain insights into consumer purchasing behavior and trends.
+
+    o	random_forest_colab.ipynb: Notebook for training a Random Forest machine learning model to predict consumer behavior based on historical data.
+
+    o	sales_predictions_colab.ipynb: Notebook for generating sales predictions and identifying future spending trends using machine learning models.
+
+•	resources: Contains additional tools and resources for model optimization and evaluation.
+
+    o	model_optimization.xlsx: Spreadsheet with the results of hyperparameter optimization for different models, including Random Forest and other algorithms.
+
 
 
   

@@ -40,24 +40,26 @@ Key Changes from Raw to Processed Data
 <br>#TODO Instructions on how to use and interact with the project</br>
 
 Project Structure:
+
 •	data: Contains the raw and processed datasets.
 
-  o	raw_data.csv: Original transaction data.
+    o	raw_data.csv: Original transaction data.
   
-  o	cleaned_data.csv: Preprocessed dataset ready for analysis.
+    o	cleaned_data.csv: Preprocessed dataset ready for analysis.
   
 •	notebooks: Jupyter notebooks for data exploration and modeling.
 
-  o	EDA.ipynb: Exploratory Data Analysis for understanding customer behavior.
+    o	EDA.ipynb: Exploratory Data Analysis for understanding customer behavior.
   
-  o	modeling.ipynb: Building and evaluating predictive models.
+    o	modeling.ipynb: Building and evaluating predictive models.
   
 •	script: Python scripts for data preprocessing, feature engineering, and model training.
-  o	data_preprocessing.py: Cleans and preprocesses the raw data.
+
+    o	data_preprocessing.py: Cleans and preprocesses the raw data.
   
-  o	feature_engineering.py: Creates additional features for analysis and modeling.
+    o	feature_engineering.py: Creates additional features for analysis and modeling.
   
-  o	model.py: Trains and evaluates machine learning models.
+    o	model.py: Trains and evaluates machine learning models.
 
 
   

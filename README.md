@@ -11,6 +11,7 @@ Our team, Ellen, Natalie, and Drew sought out to explore the spending behavior o
 The primary dataset used for this project is the Kaggle Online Shopping Dataset, which contains records of customer transactions, including demographic information, product details, and transaction-specific data (e.g., price, quantity, and promotions).
 
 Raw Data Overview
+
 •	Customer ID, Transaction ID: Identifiers for transactions and customers.
 
 •	Gender, Location: Demographic details of customers.

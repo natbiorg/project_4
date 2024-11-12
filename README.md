@@ -8,10 +8,40 @@ Our team, Ellen, Natalie, and Drew sought out to explore the spending behavior o
 
 #### Data Sources
 <br>#TODO what data sources did we use? What did the raw data look like when we started and then when we brought it into analysis.</br>
+The primary dataset used for this project is the Kaggle Online Shopping Dataset, which contains records of customer transactions, including demographic information, product details, and transaction-specific data (e.g., price, quantity, and promotions).
+
+Raw Data Overview
+•	Customer ID, Transaction ID: Identifiers for transactions and customers.
+•	Gender, Location: Demographic details of customers.
+•	Transaction Date: Date and time of purchase.
+•	Product Category, Description: Product-related information.
+•	Quantity, Price, Delivery Charges: Transactional data.
+•	Coupon Status, Discount Percentage: Promotion-related data.
+
+Key Changes from Raw to Processed Data
+•	Consolidation: The raw dataset had multiple rows per transaction for the same customer, which were consolidated into one row per transaction in the processed dataset.
+•	New Features: Added Customer Tenure (how long the customer has been shopping) and Total Sales (Quantity * Average Price).
+•	Holiday Indicator: The Near_Holiday column was added to indicate whether the transaction occurred around a holiday (e.g., New Year's Day).
+•	State Information: State column added to track customer location.
+•	Missing Values: Handled through mean imputation or row removal for critical data.
+
 
   
 #### Code Structure and Use
 <br>#TODO Instructions on how to use and interact with the project</br>
+
+Project Structure:
+•	data: Contains the raw and processed datasets.
+  o	raw_data.csv: Original transaction data.
+  o	cleaned_data.csv: Preprocessed dataset ready for analysis.
+•	notebooks: Jupyter notebooks for data exploration and modeling.
+  o	EDA.ipynb: Exploratory Data Analysis for understanding customer behavior.
+  o	modeling.ipynb: Building and evaluating predictive models.
+•	script: Python scripts for data preprocessing, feature engineering, and model training.
+  o	data_preprocessing.py: Cleans and preprocesses the raw data.
+  o	feature_engineering.py: Creates additional features for analysis and modeling.
+  o	model.py: Trains and evaluates machine learning models.
+
 
   
 #### Ethical Considerations

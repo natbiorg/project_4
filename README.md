@@ -22,7 +22,7 @@ Our team—Ellen, Natalie, and Drew—explored consumer spending behavior using 
 ## **Data Sources**
 
 ### **Primary Dataset**
-The main dataset used in this project is the **Kaggle Online Shopping Dataset**, which includes customer transaction records, demographic details, product information, and transactional specifics like price, quantity, and promotions.
+The main dataset used in this project is the **Kaggle Online Shopping Dataset** *, which includes customer transaction records, demographic details, product information, and transactional specifics like price, quantity, and promotions.
 
 ### **Raw Data Overview**
 - **Identifiers**: `Customer ID`, `Transaction ID` for unique identification.
@@ -57,6 +57,7 @@ The main dataset used in this project is the **Kaggle Online Shopping Dataset**,
   - `data_cleaning_preprocessing.ipynb`: Data cleaning and preprocessing steps, including handling missing values and formatting dates.
   - `initial_analysis.ipynb`: Exploratory data analysis (EDA) notebook to identify trends and patterns in consumer spending.
   - `random_forest_colab.ipynb`: Implements a Random Forest model to predict spending based on historical data.
+  - `random_forest_outlier_control_colab.ipynb`: Implements a Random Forest model to predict spending based on historical data and includes a control for outliers in Total_Cost.
   - `sales_predictions_colab.ipynb`: Predictive analysis using a neural network model to identify future spending trends.
 
 - **resources**: Additional tools and resources.
@@ -123,7 +124,7 @@ Through our analysis, we found:
 
 ## **References**
 
-- **Data Source**: [Kaggle Online Shopping Dataset](https://www.kaggle.com/)
+- * **Data Source**: [Kaggle Online Shopping Dataset](https://www.kaggle.com/)
 - **References for any code used that is not your own:**
   - ChatGPT
   - AskBCS

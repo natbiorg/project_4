@@ -104,19 +104,20 @@ Through our analysis, we found:
 
 ### **Performance Summary**
 
-| Model             | MSE (or Loss) | MAE  | R-squared | Key Features                     | Notes                                  |
-|-------------------|---------------|------|-----------|----------------------------------|----------------------------------------|
-| Random Forest     | 364.57        | 0.95 | 0.981     | `Near_Holiday`, `Product_Category`, `State` | High R-squared indicates strong fit; interpretable feature importance |
-| Neural Network    | 32.17         | 1.6  | N/A       | `Near_Holiday`, `Product_Category`, `Discount Percentage` | Best configuration used 3 layers with 6/6 nodes, relu/linear activations; optimized with 50 epochs |
-| Neural Network (Alternative Config) | 22.2   | 2.08 | N/A       | `Near_Holiday`, `Product_Category`, `Discount Percentage` | Performed well with 4 layers and 50 epochs; possible overfitting at 100 epochs |
+| Model                                 | MSE         | MAE   | R²     | Key Features                                  | Notes                                                                                      |
+|---------------------------------------|-------------|-------|--------|------------------------------------------------|--------------------------------------------------------------------------------------------|
+| Linear Regression                     | N/A         | N/A   | 0.119  | `Total_Cost` vs. `Total_Sales`                 | Low R² (0.119) indicates a weak linear relationship between Total Cost and Total Sales.     |
+| Random Forest                         | 297.05      | 0.92  | 0.98   | `Near_Holiday`, `Product_Category`, `State`    | Performed best with max depth of 100 and 600 trees; captured 98% of the data’s variance.   |
+| Random Forest with Outlier Control    | 10,803.24   | 10.24 | 0.45   | `Near_Holiday`, `Product_Category`, `State`    | Ineffective model; removing outliers didn’t improve performance due to inherent data variability. |
+| Neural Network                        | 27.36       | 1.98  | N/A    | `Near_Holiday`, `Product_Category`, `Discount Percentage` | Best performance achieved with 4 layers, 8/6/6/2 nodes, and 50 epochs.                             |
 
-### **Summary of Neural Network Configurations:**
-- **Best Neural Network (Loss: 32.17, MAE: 1.6)**: Achieved with 3 layers (6 nodes in each of the first two layers), 50 epochs, and `relu/linear` activation functions.
-- **Alternative Configurations**: 
-  - **4-layer Model with Loss: 22.2, MAE: 2.08** - Lower loss but slightly higher MAE, indicating possible overfitting as complexity increased.
-  - **4-layer Model with 100 epochs** - Higher loss (63.91) and MAE (5.16), likely due to overfitting.
+### Summary of Key Model Insights
 
-This summary provides an overview of the neural network configurations tested, highlighting the most effective setup and potential signs of overfitting with increased complexity.
+- **Linear Regression**: The R² value of 0.119 shows that Total Cost is not a strong predictor of Total Sales.
+- **Random Forest**: Achieved high accuracy with an R² of 0.98, capturing nearly all data variance. The model performed best with 100 max depth and 600 trees.
+- **Random Forest with Outlier Control**: Despite attempts to control outliers, this model only achieved an R² of 0.45, indicating outliers didn’t significantly impact model performance.
+- **Neural Network**: The neural network performed best with 4 layers, yielding an MSE of 27.36 and an MAE of 1.98, demonstrating that complex architectures with multiple layers can improve predictive accuracy in this dataset.
+
 
 ---
 

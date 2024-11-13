@@ -124,7 +124,7 @@ Through our analysis, we found:
 
 ## **References**
 
-- * **Data Source**: [Kaggle Online Shopping Dataset](https://www.kaggle.com/)
+- **Data Source** *: [Kaggle Online Shopping Dataset](https://www.kaggle.com/)
 - **References for any code used that is not your own:**
   - ChatGPT
   - AskBCS

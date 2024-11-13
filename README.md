@@ -17,6 +17,8 @@
 ## **Overview**
 Our team—Ellen, Natalie, and Drew—explored consumer spending behavior using a dataset from Kaggle. Our primary goal was to investigate the relationship between holidays and spending patterns to better understand how seasonal trends and promotional strategies impact consumer purchasing.
 
+Please see our presentation at: https://docs.google.com/presentation/d/1qU_suB4axm3DMF_lZhwAAvT6ZiF1gvn8ziu-D98tyTY/edit?usp=sharing 
+
 ---
 
 ## **Data Sources**
@@ -111,6 +113,8 @@ Through our analysis, we found:
 | Random Forest                         | 297.05      | 0.92  | 0.98   | `Near_Holiday`, `Product_Category`, `State`    | Performed best with max depth of 100 and 600 trees; captured 98% of the data’s variance.   |
 | Random Forest with Outlier Control    | 10,803.24   | 10.24 | 0.45   | `Near_Holiday`, `Product_Category`, `State`    | Ineffective model; removing outliers didn’t improve performance due to inherent data variability. |
 | Neural Network                        | 27.36       | 1.98  | N/A    | `Near_Holiday`, `Product_Category`, `Discount Percentage` | Best performance achieved with 4 layers, 8/6/6/2 nodes, and 50 epochs.                             |
+
+
 
 ### Summary of Key Model Insights
 
